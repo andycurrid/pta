@@ -93,7 +93,7 @@ function updateNames()
 
     if (!isEmpty(document.membershipForm.first1.value) ||
         !isEmpty(document.membershipForm.last1.value)) {
-        membership1 = 15;
+        membership1 = membershipFee.toFixed(2);
         displayValue = '$' + membershipFee;
     } else {
         membership1 = 0;
@@ -104,7 +104,7 @@ function updateNames()
 
     if (!isEmpty(document.membershipForm.first2.value) ||
         !isEmpty(document.membershipForm.last2.value)) {
-        membership2 = 15;
+        membership2 = membershipFee.toFixed(2);
         displayValue = '$' + membershipFee;
     } else {
         membership2 = 0;
@@ -378,7 +378,7 @@ function validate()
 <tr height="10"><td colspan="7" width="680"></td></tr>
 
 <tr style="font-size:9pt">
-<td align="right" colspan="4" width="360"><b>Please enter donation amount to AoA PTA in dollars:&nbsp;$</b></td>
+<td align="right" colspan="4" width="360"><b>Please enter donation amount to BCS PTA in dollars:&nbsp;$</b></td>
 <td align="left" width="100"><input maxlength="6" name="donation" onchange="validateDonation();" size="6" type="text"></td>
 <td align="center" width="120"></td>
 <td align="right" id="donationSubtotal" style="font-size:9pt;font-weight:bold;" width="100">$0.00</td>
